@@ -3,60 +3,99 @@
 <head>
   <title>Services — Appraisals Plus Inc</title>
   
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Licensed residential and commercial property appraisals in Greater Atlanta. Fast, unbiased, professional reports.">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-[#2b3b4f]">
   
-  <header class="bg-white border-b sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-4">
-        <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-20 md:h-24 w-auto object-contain">
-        <span class="sr-only">Appraisals Plus Inc</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-gray-700 font-medium">
-        <a href="index.html" class="hover:text-purple-600">Home</a>
-        <a href="services.html" class="hover:text-purple-600">Services</a>
-        <a href="about.html" class="hover:text-purple-600">About</a>
-        <a href="contact.html" class="hover:text-purple-600">Contact</a>
-        <a href="index.html#request" class="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white">Request Appraisal</a>
-      </nav>
+<header class="bg-gradient-to-r from-[#0b2e59] to-[#1f5fa6]">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-16 md:h-20 w-auto object-contain">
+      <span class="sr-only">Appraisals Plus Inc</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm">
+      <a href="index.html" class="text-white/90 hover:text-white">Home</a>
+      <a href="about.html" class="text-white/90 hover:text-white">About</a>
+      <a href="services.html" class="text-white font-semibold underline">Services</a>
+      <a href="specialty.html" class="text-white/90 hover:text-white">Specialty</a>
+      <a href="service-areas.html" class="text-white/90 hover:text-white">Service Areas</a>
+      <a href="insights.html" class="text-white/90 hover:text-white">Insights</a>
+      <a href="contact.html" class="text-white/90 hover:text-white">Contact</a>
+      <a href="index.html#request" class="ml-2 px-4 py-2 rounded-lg bg-white text-[#0b2e59] font-semibold hover:opacity-90">Request Appraisal</a>
+    </nav>
+    <button class="md:hidden block text-white" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰</button>
+  </div>
+  <div id="mnav" class="md:hidden hidden border-t border-white/20">
+    <div class="px-4 py-3 flex flex-col gap-3 text-white">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="specialty.html">Specialty</a>
+      <a href="service-areas.html">Service Areas</a>
+      <a href="insights.html">Insights</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container mx-auto px-4 py-16 max-w-5xl">
-    <h1 class="text-3xl font-bold mb-8">Our Services</h1>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h2 class="text-xl font-semibold mb-2">Residential Appraisals</h2>
-        <p class="text-gray-600">Single-family, condos, and 2–4 unit properties for purchase, refinance, divorce, estate, and PMI removal.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h2 class="text-xl font-semibold mb-2">Commercial Appraisals</h2>
-        <p class="text-gray-600">Retail, office, industrial, and mixed-use valuations with income/cost/market approaches as applicable.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h2 class="text-xl font-semibold mb-2">Land Valuation</h2>
-        <p class="text-gray-600">Vacant lots and development tracts, including highest and best use analysis.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h2 class="text-xl font-semibold mb-2">Special Purpose</h2>
-        <p class="text-gray-600">Churches, schools, and unique assets with tailored methodologies.</p>
-      </div>
-    </div>
-  </main>
   
-  <footer class="bg-white border-t mt-16">
-    <div class="container mx-auto px-4 py-8 text-center text-gray-600 space-y-1">
-      <p>© 2025 Appraisals Plus Inc. All rights reserved.</p>
-      <p>215 Marvin Miller Dr SW, Atlanta, GA 30336</p>
-      <p><a class="text-purple-600" href="mailto:info@appraisalsplusinc.com">info@appraisalsplusinc.com</a></p>
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <h1 class="text-3xl font-bold text-[#0b2540] mb-6">Comprehensive Valuation & Advisory Services</h1>
+  <p class="text-gray-600 mb-8">From single-property assignments to portfolios, we deliver clear, defensible valuations.</p>
+  <div class="grid md:grid-cols-2 gap-6">
+    <article class="bg-white rounded-xl p-6 shadow">
+      <h2 class="text-xl font-semibold">Residential Reports</h2>
+      <p class="text-gray-600">Conforming with market and lender standards; purchase, refinance, divorce, estate, PMI removal.</p>
+    </article>
+    <article class="bg-white rounded-xl p-6 shadow">
+      <h2 class="text-xl font-semibold">Commercial Reports</h2>
+      <p class="text-gray-600">Office, retail, industrial, mixed-use; market, cost, and income approaches as applicable.</p>
+    </article>
+    <article class="bg-white rounded-xl p-6 shadow">
+      <h2 class="text-xl font-semibold">Land Valuation</h2>
+      <p class="text-gray-600">Vacant land and development tracts; highest and best use analysis.</p>
+    </article>
+    <article class="bg-white rounded-xl p-6 shadow">
+      <h2 class="text-xl font-semibold">Advisory</h2>
+      <p class="text-gray-600">Desk reviews, feasibility, and market studies.</p>
+    </article>
+  </div>
+</section>
+
+  
+<footer class="bg-white border-t">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm text-[#6b7b8c]">
+    <div>
+      <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-12 mb-3">
+      <p>Licensed property appraisal services across Greater Atlanta.</p>
     </div>
-  </footer>
+    <div>
+      <h4 class="text-[#0b2540] font-semibold mb-3">Services</h4>
+      <ul class="space-y-2">
+        <li><a class="hover:underline" href="services.html">Comprehensive Valuation</a></li>
+        <li><a class="hover:underline" href="specialty.html">Specialty Practices</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-[#0b2540] font-semibold mb-3">Company</h4>
+      <ul class="space-y-2">
+        <li><a class="hover:underline" href="about.html">About</a></li>
+        <li><a class="hover:underline" href="insights.html">Insights</a></li>
+        <li><a class="hover:underline" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-[#0b2540] font-semibold mb-3">Get in touch</h4>
+      <p>215 Marvin Miller Dr SW, Atlanta, GA 30336</p>
+      <p><a class="text-blue-700 hover:underline" href="mailto:info@appraisalsplusinc.com">info@appraisalsplusinc.com</a></p>
+    </div>
+  </div>
+  <div class="text-center py-6 text-xs text-[#6b7b8c] border-t">© 2025 Appraisals Plus Inc</div>
+</footer>
 
 </body>
 </html>
