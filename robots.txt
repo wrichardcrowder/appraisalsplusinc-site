@@ -1,0 +1,3 @@
+User-agent: * 
+Allow: / 
+Sitemap: https://appraisalsplusinc.com/sitemap.xml 
