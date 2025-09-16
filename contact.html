@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact — Appraisals Plus Inc</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Licensed residential and commercial property appraisals in Greater Atlanta. Fast, unbiased, professional reports.">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-50">
+  
+  <header class="bg-white border-b sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-4">
+        <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-20 md:h-24 w-auto object-contain">
+        <span class="sr-only">Appraisals Plus Inc</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-purple-600">Home</a>
+        <a href="services.html" class="hover:text-purple-600">Services</a>
+        <a href="about.html" class="hover:text-purple-600">About</a>
+        <a href="contact.html" class="hover:text-purple-600">Contact</a>
+        <a href="index.html#request" class="px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 text-white">Request Appraisal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-16 max-w-3xl">
+    <h1 class="text-3xl font-bold mb-6">Contact Us</h1>
+    <div class="bg-white rounded-xl shadow p-8">
+      <form action="https://formspree.io/f/mwpnjnrb" method="POST" class="space-y-6">
+        <input type="hidden" name="_subject" value="New Contact from Website">
+        <div>
+          <label class="block text-gray-700 mb-2">Your Name</label>
+          <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-gray-700 mb-2">Email</label>
+          <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg">
+        </div>
+        <div>
+          <label class="block text-gray-700 mb-2">Message</label>
+          <textarea name="message" rows="5" class="w-full px-4 py-2 border rounded-lg" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-3 rounded-lg hover:opacity-90 font-medium">Send</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer class="bg-white border-t mt-16">
+    <div class="container mx-auto px-4 py-8 text-center text-gray-600 space-y-1">
+      <p>© 2025 Appraisals Plus Inc. All rights reserved.</p>
+      <p>215 Marvin Miller Dr SW, Atlanta, GA 30336</p>
+      <p><a class="text-purple-600" href="mailto:info@appraisalsplusinc.com">info@appraisalsplusinc.com</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
