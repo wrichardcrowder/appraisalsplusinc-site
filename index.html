@@ -6,26 +6,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0b2e59',
+            primary2: '#1f5fa6',
+            ink: '#0b2540'
+          }
+        }
+      }
+    }
+  </script>
+
 
 </head>
-<body class="bg-gray-50 text-[#2b3b4f]">
+<body class="bg-gray-50 text-gray-700">
   
-<header class="bg-gradient-to-r from-[#0b2e59] to-[#1f5fa6]">
+<header class="bg-gradient-to-r from-primary to-primary2">
   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
     <a href="index.html" class="flex items-center gap-4">
-      <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-16 md:h-20 w-auto object-contain">
+      <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-24 md:h-28 w-auto object-contain">
       <span class="sr-only">Appraisals Plus Inc</span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm">
-      <a href="index.html" class="text-white font-semibold underline">Home</a>
+      <a href="index.html" class="text-white font-semibold underline underline-offset-4">Home</a>
       <a href="about.html" class="text-white/90 hover:text-white">About</a>
       <a href="services.html" class="text-white/90 hover:text-white">Services</a>
       <a href="specialty.html" class="text-white/90 hover:text-white">Specialty</a>
       <a href="service-areas.html" class="text-white/90 hover:text-white">Service Areas</a>
       <a href="insights.html" class="text-white/90 hover:text-white">Insights</a>
       <a href="contact.html" class="text-white/90 hover:text-white">Contact</a>
-      <a href="index.html#request" class="ml-2 px-4 py-2 rounded-lg bg-white text-[#0b2e59] font-semibold hover:opacity-90">Request Appraisal</a>
+      <a href="index.html#request" class="ml-2 px-4 py-2 rounded-lg bg-white text-primary font-semibold hover:opacity-90">Request Appraisal</a>
     </nav>
     <button class="md:hidden block text-white" onclick="document.getElementById('mnav').classList.toggle('hidden')">☰</button>
   </div>
@@ -43,19 +58,19 @@
 </header>
 
   
-<section class="bg-gradient-to-r from-[#0b2e59] to-[#1f5fa6] text-white">
+<section class="bg-gradient-to-r from-primary to-primary2 text-white">
   <div class="max-w-7xl mx-auto px-4 py-20 text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold">Independent Appraisal Services</h1>
-    <p class="mt-4 text-lg md:text-xl opacity-90">Residential & Commercial property valuations you can trust.</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow">Independent Appraisal Services</h1>
+    <p class="mt-4 text-lg md:text-xl opacity-95">Residential & Commercial property valuations you can trust.</p>
     <div class="mt-8 flex justify-center gap-4">
-      <a href="#request" class="px-6 py-3 rounded-lg bg-white text-#0b2e59 font-semibold hover:opacity-90">Request Consultation</a>
+      <a href="#request" class="px-6 py-3 rounded-lg bg-white text-primary font-semibold hover:opacity-90">Request Consultation</a>
       <a href="services.html" class="px-6 py-3 rounded-lg border border-white/80 hover:bg-white/10">View Services</a>
     </div>
   </div>
 </section>
 
 <section class="max-w-7xl mx-auto px-4 py-16">
-  <h2 class="text-3xl font-bold text-[#0b2540] text-center mb-8">Comprehensive Valuation & Advisory</h2>
+  <h2 class="text-3xl font-bold text-ink text-center mb-8">Comprehensive Valuation & Advisory</h2>
   <div class="grid md:grid-cols-3 gap-6">
     <div class="bg-white rounded-xl p-6 shadow">
       <h3 class="text-xl font-semibold mb-2">Residential</h3>
@@ -74,7 +89,7 @@
 
 <section id="request" class="bg-gray-100">
   <div class="max-w-3xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold text-center text-[#0b2540] mb-4">Request a Consultation</h2>
+    <h2 class="text-3xl font-bold text-center text-ink mb-4">Request a Consultation</h2>
     <p class="text-center text-gray-600 mb-8">Tell us about your property. We’ll get in touch within 1 business day.</p>
     <form action="https://formspree.io/f/mwpnjnrb" method="POST" class="bg-white rounded-xl shadow p-8 space-y-6">
       <input type="hidden" name="_subject" value="New Consultation Request from Website">
@@ -86,27 +101,27 @@
       <div><label class="block text-sm mb-1">Email</label><input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg"></div>
       <div><label class="block text-sm mb-1">Phone</label><input type="tel" name="phone" required class="w-full px-4 py-2 border rounded-lg"></div>
       <div><label class="block text-sm mb-1">Property Address</label><textarea name="address" rows="3" class="w-full px-4 py-2 border rounded-lg"></textarea></div>
-      <button class="w-full bg-gradient-to-r from-[#0b2e59] to-[#1f5fa6] text-white py-3 rounded-lg font-medium">Submit</button>
+      <button class="w-full bg-gradient-to-r from-primary to-primary2 text-white py-3 rounded-lg font-medium">Submit</button>
     </form>
   </div>
 </section>
 
   
 <footer class="bg-white border-t">
-  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm text-[#6b7b8c]">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8 text-sm text-gray-600">
     <div>
       <img src="assets/logo.png" alt="Appraisals Plus Inc" class="h-12 mb-3">
       <p>Licensed property appraisal services across Greater Atlanta.</p>
     </div>
     <div>
-      <h4 class="text-[#0b2540] font-semibold mb-3">Services</h4>
+      <h4 class="text-ink font-semibold mb-3">Services</h4>
       <ul class="space-y-2">
         <li><a class="hover:underline" href="services.html">Comprehensive Valuation</a></li>
         <li><a class="hover:underline" href="specialty.html">Specialty Practices</a></li>
       </ul>
     </div>
     <div>
-      <h4 class="text-[#0b2540] font-semibold mb-3">Company</h4>
+      <h4 class="text-ink font-semibold mb-3">Company</h4>
       <ul class="space-y-2">
         <li><a class="hover:underline" href="about.html">About</a></li>
         <li><a class="hover:underline" href="insights.html">Insights</a></li>
@@ -114,12 +129,12 @@
       </ul>
     </div>
     <div>
-      <h4 class="text-[#0b2540] font-semibold mb-3">Get in touch</h4>
+      <h4 class="text-ink font-semibold mb-3">Get in touch</h4>
       <p>215 Marvin Miller Dr SW, Atlanta, GA 30336</p>
       <p><a class="text-blue-700 hover:underline" href="mailto:info@appraisalsplusinc.com">info@appraisalsplusinc.com</a></p>
     </div>
   </div>
-  <div class="text-center py-6 text-xs text-[#6b7b8c] border-t">© 2025 Appraisals Plus Inc</div>
+  <div class="text-center py-6 text-xs text-gray-500 border-t">© 2025 Appraisals Plus Inc</div>
 </footer>
 
 </body>
